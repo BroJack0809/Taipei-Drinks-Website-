@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="#" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Taipei Drinks | Premium Directory</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <div class="background-blobs">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <!-- Blur overlay for better text readability if needed -->
+  <div class="glass-overlay"></div>
+
+  <div class="app-container">
+    <header>
+      <div class="logo">
+        <i class="fa-solid fa-mug-hot"></i>
+        <span>Taipei Drinks</span>
+      </div>
+      <nav>
+        <button class="nav-btn active" data-i18n="navHome">Home</button>
+        <button class="nav-btn" data-i18n="navAbout">About</button>
+      </nav>
+    </header>
+
+    <section id="hero">
+      <h1 class="hero-title" data-i18n="heroTitle">Discover Taipei's<br /><span>Finest Sips</span></h1>
+      <p class="hero-subtitle" data-i18n="heroSubtitle">
+        Explore the best beverage shops in the city. <br />From classic pearl tea
+        to modern mocktails.
+      </p>
+      <div class="search-bar-container">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" id="search-input" data-i18n-placeholder="searchPlaceholder"
+          placeholder="Search for shops, tea, or flavors..." />
+      </div>
+    </section>
+
+    <main>
+      <div class="section-header">
+        <h2>Trending Shops</h2>
+        <div class="filter-tags">
+          <button class="tag-btn active" data-filter="all" data-i18n="filterAll">All</button>
+          <button class="tag-btn" data-filter="Bubble Tea" data-i18n="filterBubbleTea">Bubble Tea</button>
+          <button class="tag-btn" data-filter="Tea" data-i18n="filterPureTea">Pure Tea</button>
+          <button class="tag-btn" data-filter="Premium" data-i18n="filterPremium">Premium</button>
+        </div>
+      </div>
+
+      <div id="shop-grid" class="shop-grid">
+        <!-- Shops will be injected here by JS -->
+      </div>
+    </main>
+
+    <footer>
+      <p data-i18n="footerText">&copy; 2025 Taipei Drinks Directory.</p>
+    </footer>
+  </div>
+
+  <!-- Floating Language Toggle -->
+  <button id="lang-toggle" class="lang-toggle-btn">
+    <i class="fa-solid fa-globe"></i> <span id="lang-text">中文</span>
+  </button>
+
+  <!-- Modal -->
+  <div id="modal-overlay" class="modal-overlay hidden">
+    <div class="modal glass-card">
+      <button id="close-modal" class="close-btn">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 id="modal-title">Shop Name</h2>
+          <div id="modal-rating" class="modal-rating">
+            <i class="fa-solid fa-star"></i> 4.5
+          </div>
+        </div>
+        <p id="modal-desc" class="modal-desc">Description goes here.</p>
+        <div class="divider"></div>
+        <h3 data-i18n="menuHighlights">Menu Highlights</h3>
+        <ul id="modal-menu" class="menu-list">
+          <!-- Menu items injected here -->
+        </ul>
+        <div class="modal-footer">
+          <button class="action-btn" data-i18n="orderBtn">Order Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>

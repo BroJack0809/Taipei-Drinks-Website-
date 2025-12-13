@@ -1,0 +1,132 @@
+[
+    {
+        "id": "1",
+        "name": "50 Lan (50嵐)",
+        "description": "Taipei's classic bubble tea shop, known for its small pearl milk tea.",
+        "address": "No. 4, Lane 12, Yongkang St, Da'an District, Taipei City",
+        "rating": 4.5,
+        "tags": [
+            "Bubble Tea",
+            "Classic",
+            "Affordable"
+        ],
+        "menu": [
+            {
+                "name": "Pearl Milk Tea",
+                "price": "NT$50"
+            },
+            {
+                "name": "Oolong Tea",
+                "price": "NT$30"
+            },
+            {
+                "name": "Black Tea Macchiato",
+                "price": "NT$55"
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "name": "Kebuke (可不可熟成紅茶)",
+        "description": "Specializing in aged black tea, offering a rich and mature flavor profile.",
+        "address": "No. 18, Songshou Rd, Xinyi District, Taipei City",
+        "rating": 4.7,
+        "tags": [
+            "Black Tea",
+            "Vintage",
+            "Popular"
+        ],
+        "menu": [
+            {
+                "name": "Signature Black Tea",
+                "price": "NT$35"
+            },
+            {
+                "name": "White Jade Black Tea Latte",
+                "price": "NT$65"
+            },
+            {
+                "name": "Ruby Black Tea",
+                "price": "NT$45"
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "name": "Ching Shin Fu Chuan (清心福全)",
+        "description": "A long-standing chain famous for its customized ice and sugar levels.",
+        "address": "No. 123, Zhongshan N Rd, Zhongshan District, Taipei City",
+        "rating": 4.3,
+        "tags": [
+            "Tea",
+            "Customizable",
+            "Everywhere"
+        ],
+        "menu": [
+            {
+                "name": "High Mountain Tea",
+                "price": "NT$30"
+            },
+            {
+                "name": "Plum Green Tea",
+                "price": "NT$45"
+            },
+            {
+                "name": "Honey Green Tea",
+                "price": "NT$45"
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "name": "Milksha (迷客夏)",
+        "description": "Using fresh milk from their own ranch, Milksha offers creamy and natural drinks.",
+        "address": "No. 6, Hangchow S Rd, Zhongzheng District, Taipei City",
+        "rating": 4.8,
+        "tags": [
+            "Fresh Milk",
+            "Taro",
+            "Premium"
+        ],
+        "menu": [
+            {
+                "name": "Taro Fresh Milk",
+                "price": "NT$65"
+            },
+            {
+                "name": "Earl Grey Tea Latte",
+                "price": "NT$60"
+            },
+            {
+                "name": "Valrhona Cocoa Latte",
+                "price": "NT$70"
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "name": "SOMA Tea & Mocktail",
+        "description": "High-end tea mocktails, blending tea with unique flavors for a sophisticated taste.",
+        "address": "No. 23, Lane 187, Sec 1, Dunhua S Rd, Da'an District, Taipei City",
+        "rating": 4.9,
+        "tags": [
+            "Mocktail",
+            "Trendy",
+            "Expensive"
+        ],
+        "menu": [
+            {
+                "name": "Original Milk Tea",
+                "price": "NT$60"
+            },
+            {
+                "name": "SOMA Mocktail",
+                "price": "NT$90"
+            },
+            {
+                "name": "Mint Milk Tea",
+                "price": "NT$80"
+            }
+        ]
+    }
+]

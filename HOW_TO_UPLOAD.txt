@@ -1,0 +1,38 @@
+
+# How to Upload Your Taipei Drinks Project to GitHub
+
+It seems your computer does not have "Git" installed, so the automatic script couldn't run. Don't worry! You have two simple options.
+
+## Option 1: The "Drag & Drop" Method (No installation needed)
+This is the easiest way if you don't want to install new software.
+
+1. **Create a Repository**:
+   - Go to [GitHub.com](https://github.com) and sign in.
+   - Click the **+** icon in the top right and select **New repository**.
+   - Name it (e.g., `taipei-drinks-2025`).
+   - Click **Create repository**.
+
+2. **Upload Files**:
+   - On the setup page that appears, look for the link saying: **"uploading an existing file"**.
+   - Or just go to your new repository page.
+   - Open your project folder (`C:\Users\csie\.gemini\antigravity\scratch\taipei_drinks`) in Windows File Explorer.
+   - Select ALL files (index.html, main.js, style.css, shops.json, README.md, etc.).
+   - **Drag and drop** them directly onto the GitHub webpage.
+   - Wait for the files to upload.
+
+3. **Save Changes**:
+   - Scroll down to the "Commit changes" box.
+   - In the message box, type: "Initial upload".
+   - Click the green **Commit changes** button.
+
+**Done!** Your website is now on GitHub.
+
+---
+
+## Option 2: Install Git (To use the automatic script)
+If you prefer to use the `setup_github.bat` script or want to use Git in the future:
+
+1. Download Git for Windows: [https://git-scm.com/download/win](https://git-scm.com/download/win)
+2. Run the installer and click "Next" through the default options.
+3. **Important**: After installing, **restart your computer** (or at least close and reopen any command prompts) for the settings to take effect.
+4. Try running `setup_github.bat` again.
