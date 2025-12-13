@@ -2,7 +2,7 @@
 
 ![Project Demo](demo_final.webp)
 
-[Live Demo](https://BroJack0809.github.io/Taipei-Drinks-Website-/)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=github)](https://BroJack0809.github.io/Taipei-Drinks-Website-/)
 
 A bilingual (English/Traditional Chinese) web directory featuring the Top 10 popular beverage shops in Taipei. 
 
