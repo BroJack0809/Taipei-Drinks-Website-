@@ -275,6 +275,11 @@ function updateLanguage(lang) {
 
     // Re-render Shops
     renderShops(allShops);
+
+    // Refresh Modal if open
+    if (currentShop && !modalOverlay.classList.contains('hidden')) {
+        openModal(currentShop);
+    }
 }
 
 function toggleLanguage() {
@@ -318,8 +323,11 @@ function renderShops(shops) {
     });
 }
 
+let currentShop = null;
+
 // Modal Logic (Updated for I18n)
 function openModal(shop) {
+    currentShop = shop; // Track current shop
     const name = shop.name[currentLang];
     const desc = shop.description[currentLang];
     const menu = shop.menu;
@@ -342,6 +350,7 @@ function openModal(shop) {
 }
 
 function closeModal() {
+    currentShop = null; // Clear current shop
     modalOverlay.classList.add('hidden');
     document.body.style.overflow = '';
 }
