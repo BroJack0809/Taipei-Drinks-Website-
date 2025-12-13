@@ -1,6 +1,6 @@
 # Taipei Drinks Directory (2025 Edition)
 
-![Project Demo](demo.webp)
+![Project Demo](demo_new.webp)
 
 A bilingual (English/Traditional Chinese) web directory featuring the Top 10 popular beverage shops in Taipei. 
 
