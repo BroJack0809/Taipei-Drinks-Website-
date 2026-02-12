@@ -711,11 +711,64 @@ function openModal(shop) {
     modalRating.innerHTML = `<i class="fa-solid fa-star"></i> ${shop.rating}`;
     modalDesc.textContent = desc;
 
-    // Generate menu HTML with categories
-    modalMenu.innerHTML = menuCategories.map(category => `
+    // Helper function to merge M/L size variants
+    function mergeSizeVariants(items) {
+        const merged = [];
+        const processed = new Set();
+
+        items.forEach((item, index) => {
+            if (processed.has(index)) return;
+
+            // Extract base name without size marker
+            const nameZh = item.name.zh;
+            const nameEn = item.name.en;
+            const baseNameZh = nameZh.replace(/\s*\([ML]\)\s*$/, '');
+            const baseNameEn = nameEn.replace(/\s*\([ML]\)\s*$/, '');
+
+            const hasM = nameZh.includes('(M)') || nameEn.includes('(M)');
+            const hasL = nameZh.includes('(L)') || nameEn.includes('(L)');
+
+            if (hasM) {
+                // Look for corresponding L size
+                const lIndex = items.findIndex((other, i) => {
+                    if (i <= index || processed.has(i)) return false;
+                    const otherBaseZh = other.name.zh.replace(/\s*\([ML]\)\s*$/, '');
+                    const otherBaseEn = other.name.en.replace(/\s*\([ML]\)\s*$/, '');
+                    const otherHasL = other.name.zh.includes('(L)') || other.name.en.includes('(L)');
+                    return otherBaseZh === baseNameZh && otherBaseEn === baseNameEn && otherHasL;
+                });
+
+                if (lIndex !== -1) {
+                    // Merge M and L
+                    merged.push({
+                        name: {
+                            zh: baseNameZh + ' (M/L)',
+                            en: baseNameEn + ' (M/L)'
+                        },
+                        price: `${item.price}/${items[lIndex].price}`
+                    });
+                    processed.add(lIndex);
+                } else {
+                    // Only M size exists
+                    merged.push(item);
+                }
+            } else if (!hasL) {
+                // No size marker
+                merged.push(item);
+            }
+            // Skip standalone L items (they should have been merged with M)
+        });
+
+        return merged;
+    }
+
+    // Generate menu HTML with categories and merged items
+    modalMenu.innerHTML = menuCategories.map(category => {
+        const mergedItems = mergeSizeVariants(category.items);
+        return `
         <div class="menu-category">
             <h3 class="category-title">${category.category[currentLang]}</h3>
-            ${category.items.map(item => `
+            ${mergedItems.map(item => `
                 <li class="menu-item">
                     <div class="item-info">
                         <span class="item-name">${item.name[currentLang]}</span>
@@ -724,8 +777,8 @@ function openModal(shop) {
                 </li>
             `).join('')}
         </div>
-    `).join('');
-
+        `;
+    }).join('');
 
     modalOverlay.classList.remove('hidden');
     document.body.style.overflow = 'hidden';
