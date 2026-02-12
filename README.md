@@ -2,8 +2,7 @@
 
 一個精美的台北手搖飲料店菜單網站,提供完整的飲品資訊、分類篩選和中英文雙語支援。
 
-[![LIVE](https://img.shields.io/badge/LIVE-GitHub%20Pages-success?style=for-the-badge)](https://brojack0809.github.io/Taipei-Drinks-Website-/)
-[![DEMO](https://img.shields.io/badge/DEMO-View%20Site-brightgreen?style=for-the-badge)](https://brojack0809.github.io/Taipei-Drinks-Website-/)
+[![DEMO](https://img.shields.io/badge/🌐_線上展示-點擊查看-brightgreen?style=for-the-badge)](https://brojack0809.github.io/Taipei-Drinks-Website-/)
 
 ## ✨ 功能特色
 
