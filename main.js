@@ -752,11 +752,25 @@ function openModal(shop) {
                     // Only M size exists
                     merged.push(item);
                 }
-            } else if (!hasL) {
+            } else if (hasL) {
+                // Check if this L has a corresponding M before it
+                const hasPreviousM = items.slice(0, index).some((other, i) => {
+                    if (processed.has(i)) return false;
+                    const otherBaseZh = other.name.zh.replace(/\s*\([ML]\)\s*$/, '');
+                    const otherBaseEn = other.name.en.replace(/\s*\([ML]\)\s*$/, '');
+                    const otherHasM = other.name.zh.includes('(M)') || other.name.en.includes('(M)');
+                    return otherBaseZh === baseNameZh && otherBaseEn === baseNameEn && otherHasM;
+                });
+
+                if (!hasPreviousM) {
+                    // Standalone L size (no corresponding M) - keep it
+                    merged.push(item);
+                }
+                // If hasPreviousM is true, this L was already merged, skip it
+            } else {
                 // No size marker
                 merged.push(item);
             }
-            // Skip standalone L items (they should have been merged with M)
         });
 
         return merged;
