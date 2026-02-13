@@ -623,6 +623,90 @@ const shopsData = [
                 ]
             }
         ]
+    },
+    {
+        id: "6",
+        name: { zh: "得正", en: "Dejeng" },
+        description: {
+            zh: "主打春烏龍系列,鮮果茶與芝士奶蓋是招牌特色。",
+            en: "Specializes in Spring Oolong series with signature fruit teas and cheese milk foam."
+        },
+        address: "Taipei City",
+        rating: 4.7,
+        tags: { zh: ["鮮奶歐蕾", "清爽果茶"], en: ["Latte", "Fruit Tea"] },
+        menuCategories: [
+            {
+                category: { zh: "原茶系列", en: "Original TEA" },
+                items: [
+                    { name: { zh: "紅茶 (M)", en: "Black Tea (M)" }, price: "NT$25" },
+                    { name: { zh: "紅茶 (L)", en: "Black Tea (L)" }, price: "NT$30" },
+                    { name: { zh: "綠茶 (M)", en: "Green Tea (M)" }, price: "NT$25" },
+                    { name: { zh: "綠茶 (L)", en: "Green Tea (L)" }, price: "NT$30" },
+                    { name: { zh: "春烏龍 (M)", en: "Spring Oolong (M)" }, price: "NT$30" },
+                    { name: { zh: "春烏龍 (L)", en: "Spring Oolong (L)" }, price: "NT$35" },
+                    { name: { zh: "輕烏龍 (M)", en: "Light Roasted Oolong (M)" }, price: "NT$30" },
+                    { name: { zh: "輕烏龍 (L)", en: "Light Roasted Oolong (L)" }, price: "NT$35" },
+                    { name: { zh: "焙烏龍 (M)", en: "Dark Roasted Oolong (M)" }, price: "NT$30" },
+                    { name: { zh: "焙烏龍 (L)", en: "Dark Roasted Oolong (L)" }, price: "NT$35" }
+                ]
+            },
+            {
+                category: { zh: "鮮果系列", en: "Double FRUIT" },
+                items: [
+                    { name: { zh: "檸檬春烏龍 (M)", en: "Lemon Spring Oolong (M)" }, price: "NT$55" },
+                    { name: { zh: "檸檬春烏龍 (L)", en: "Lemon Spring Oolong (L)" }, price: "NT$65" },
+                    { name: { zh: "香橙春烏龍 (M)", en: "Orange Spring Oolong (M)" }, price: "NT$60" },
+                    { name: { zh: "香橙春烏龍 (L)", en: "Orange Spring Oolong (L)" }, price: "NT$70" },
+                    { name: { zh: "甘蔗春烏龍 (M)", en: "Sugar Cane Spring Oolong (M)" }, price: "NT$60" },
+                    { name: { zh: "甘蔗春烏龍 (L)", en: "Sugar Cane Spring Oolong (L)" }, price: "NT$70" },
+                    { name: { zh: "青梅春烏龍 (M)", en: "Green Plum Spring Oolong (M)" }, price: "NT$50" },
+                    { name: { zh: "青梅春烏龍 (L)", en: "Green Plum Spring Oolong (L)" }, price: "NT$60" },
+                    { name: { zh: "優酪春烏龍 (M)", en: "Yogurt Spring Oolong (M)" }, price: "NT$55" },
+                    { name: { zh: "優酪春烏龍 (L)", en: "Yogurt Spring Oolong (L)" }, price: "NT$65" },
+                    { name: { zh: "雙柚金烏龍 (M)", en: "Yuzu Oolong (M)" }, price: "NT$55" },
+                    { name: { zh: "雙柚金烏龍 (L)", en: "Yuzu Oolong (L)" }, price: "NT$65" }
+                ]
+            },
+            {
+                category: { zh: "芝士奶蓋系列", en: "Cheese MILK FOAM" },
+                items: [
+                    { name: { zh: "芝士奶蓋春烏龍 (M)", en: "Cheese Milk Foam Spring Oolong (M)" }, price: "NT$50" },
+                    { name: { zh: "芝士奶蓋春烏龍 (L)", en: "Cheese Milk Foam Spring Oolong (L)" }, price: "NT$60" },
+                    { name: { zh: "芝士奶蓋焙烏龍 (M)", en: "Cheese Milk Foam Dark Roasted Oolong (M)" }, price: "NT$50" },
+                    { name: { zh: "芝士奶蓋焙烏龍 (L)", en: "Cheese Milk Foam Dark Roasted Oolong (L)" }, price: "NT$60" },
+                    { name: { zh: "芝士奶蓋阿華田 (M)", en: "Cheese Milk Foam Ovaltine (M)" }, price: "NT$55" },
+                    { name: { zh: "芝士奶蓋阿華田 (L)", en: "Cheese Milk Foam Ovaltine (L)" }, price: "NT$65" },
+                    { name: { zh: "芝士奶蓋烘吉茶 (M)", en: "Cheese Milk Foam Hojicha (M)" }, price: "NT$55" },
+                    { name: { zh: "芝士奶蓋烘吉茶 (L)", en: "Cheese Milk Foam Hojicha (L)" }, price: "NT$65" }
+                ]
+            },
+            {
+                category: { zh: "經典奶茶", en: "Classic MILK TEA" },
+                items: [
+                    { name: { zh: "奶茶 (M)", en: "Milk Tea (M)" }, price: "NT$45" },
+                    { name: { zh: "奶茶 (L)", en: "Milk Tea (L)" }, price: "NT$50" },
+                    { name: { zh: "焙烏龍奶茶 (M)", en: "Dark Roasted Oolong Milk Tea (M)" }, price: "NT$45" },
+                    { name: { zh: "焙烏龍奶茶 (L)", en: "Dark Roasted Oolong Milk Tea (L)" }, price: "NT$50" },
+                    { name: { zh: "珍珠奶茶 (M)", en: "Pearl Milk Tea (M)" }, price: "NT$55" },
+                    { name: { zh: "珍珠奶茶 (L)", en: "Pearl Milk Tea (L)" }, price: "NT$60" },
+                    { name: { zh: "黃金珍珠奶綠 (M)", en: "Golden Bubble Green Milk Tea (M)" }, price: "NT$55" },
+                    { name: { zh: "黃金珍珠奶綠 (L)", en: "Golden Bubble Green Milk Tea (L)" }, price: "NT$60" },
+                    { name: { zh: "烘吉奶茶 (L)", en: "Hojicha Milk Tea (L)" }, price: "NT$50" }
+                ]
+            },
+            {
+                category: { zh: "鮮奶系列", en: "Fresh MILK" },
+                items: [
+                    { name: { zh: "紅茶鮮奶 (M)", en: "Black Tea Latte (M)" }, price: "NT$55" },
+                    { name: { zh: "紅茶鮮奶 (L)", en: "Black Tea Latte (L)" }, price: "NT$65" },
+                    { name: { zh: "輕烏龍鮮奶 (M)", en: "Light Roasted Oolong Tea Latte (M)" }, price: "NT$55" },
+                    { name: { zh: "輕烏龍鮮奶 (L)", en: "Light Roasted Oolong Tea Latte (L)" }, price: "NT$65" },
+                    { name: { zh: "焙烏龍鮮奶 (M)", en: "Dark Roasted Oolong Tea Latte (M)" }, price: "NT$55" },
+                    { name: { zh: "焙烏龍鮮奶 (L)", en: "Dark Roasted Oolong Tea Latte (L)" }, price: "NT$65" },
+                    { name: { zh: "烘吉鮮奶 (L)", en: "Hojicha Latte (L)" }, price: "NT$70" }
+                ]
+            }
+        ]
     }
 ];
 
